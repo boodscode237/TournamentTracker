@@ -16,7 +16,7 @@ namespace TrackerUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TournamentViwerForm());
+            Application.Run(new TournamentDashboardForm());
         }
     }
 }

@@ -36,7 +36,7 @@
             this.placeNameLabel = new System.Windows.Forms.Label();
             this.priceAmountValue = new System.Windows.Forms.TextBox();
             this.priceAmountLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pricePercentageVlue = new System.Windows.Forms.TextBox();
             this.pricePercentageValue = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
             this.createPrizeButton = new System.Windows.Forms.Button();
@@ -108,12 +108,12 @@
             this.priceAmountLabel.Text = "Price Amount";
             this.priceAmountLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox3
+            // pricePercentageVlue
             // 
-            this.textBox3.Location = new System.Drawing.Point(317, 444);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(277, 45);
-            this.textBox3.TabIndex = 18;
+            this.pricePercentageVlue.Location = new System.Drawing.Point(317, 444);
+            this.pricePercentageVlue.Name = "pricePercentageVlue";
+            this.pricePercentageVlue.Size = new System.Drawing.Size(277, 45);
+            this.pricePercentageVlue.TabIndex = 18;
             // 
             // pricePercentageValue
             // 
@@ -159,7 +159,7 @@
             this.ClientSize = new System.Drawing.Size(691, 722);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.orLabel);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.pricePercentageVlue);
             this.Controls.Add(this.pricePercentageValue);
             this.Controls.Add(this.priceAmountValue);
             this.Controls.Add(this.priceAmountLabel);
@@ -187,7 +187,7 @@
         private System.Windows.Forms.Label placeNameLabel;
         private System.Windows.Forms.TextBox priceAmountValue;
         private System.Windows.Forms.Label priceAmountLabel;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox pricePercentageVlue;
         private System.Windows.Forms.Label pricePercentageValue;
         private System.Windows.Forms.Label orLabel;
         private System.Windows.Forms.Button createPrizeButton;

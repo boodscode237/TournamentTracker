@@ -35,7 +35,7 @@
             this.addMemberButton = new System.Windows.Forms.Button();
             this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamMemberLabel = new System.Windows.Forms.Label();
-            this.createNewMemberGroupBox = new System.Windows.Forms.GroupBox();
+            this.addNewMemberGroupBox = new System.Windows.Forms.GroupBox();
             this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameValue = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@
             this.createMemberButton = new System.Windows.Forms.Button();
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.createTeamButton = new System.Windows.Forms.Button();
-            this.createNewMemberGroupBox.SuspendLayout();
+            this.addNewMemberGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // headerLabel
@@ -112,25 +112,25 @@
             this.selectTeamMemberLabel.TabIndex = 17;
             this.selectTeamMemberLabel.Text = "Select Team Member";
             // 
-            // createNewMemberGroupBox
+            // addNewMemberGroupBox
             // 
-            this.createNewMemberGroupBox.Controls.Add(this.createMemberButton);
-            this.createNewMemberGroupBox.Controls.Add(this.cellphoneValue);
-            this.createNewMemberGroupBox.Controls.Add(this.cellPhoneLabel);
-            this.createNewMemberGroupBox.Controls.Add(this.emailValue);
-            this.createNewMemberGroupBox.Controls.Add(this.emailLabel);
-            this.createNewMemberGroupBox.Controls.Add(this.lastNameValue);
-            this.createNewMemberGroupBox.Controls.Add(this.lastNameLabel);
-            this.createNewMemberGroupBox.Controls.Add(this.firstNameValue);
-            this.createNewMemberGroupBox.Controls.Add(this.firstNameLabel);
-            this.createNewMemberGroupBox.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.createNewMemberGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.createNewMemberGroupBox.Location = new System.Drawing.Point(34, 469);
-            this.createNewMemberGroupBox.Name = "createNewMemberGroupBox";
-            this.createNewMemberGroupBox.Size = new System.Drawing.Size(534, 362);
-            this.createNewMemberGroupBox.TabIndex = 20;
-            this.createNewMemberGroupBox.TabStop = false;
-            this.createNewMemberGroupBox.Text = "Create New Member";
+            this.addNewMemberGroupBox.Controls.Add(this.createMemberButton);
+            this.addNewMemberGroupBox.Controls.Add(this.cellphoneValue);
+            this.addNewMemberGroupBox.Controls.Add(this.cellPhoneLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.emailValue);
+            this.addNewMemberGroupBox.Controls.Add(this.emailLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.lastNameValue);
+            this.addNewMemberGroupBox.Controls.Add(this.lastNameLabel);
+            this.addNewMemberGroupBox.Controls.Add(this.firstNameValue);
+            this.addNewMemberGroupBox.Controls.Add(this.firstNameLabel);
+            this.addNewMemberGroupBox.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.addNewMemberGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.addNewMemberGroupBox.Location = new System.Drawing.Point(34, 469);
+            this.addNewMemberGroupBox.Name = "addNewMemberGroupBox";
+            this.addNewMemberGroupBox.Size = new System.Drawing.Size(534, 362);
+            this.addNewMemberGroupBox.TabIndex = 20;
+            this.addNewMemberGroupBox.TabStop = false;
+            this.addNewMemberGroupBox.Text = "Add New Member";
             // 
             // firstNameValue
             // 
@@ -250,7 +250,7 @@
             this.ClientSize = new System.Drawing.Size(1043, 980);
             this.Controls.Add(this.createTeamButton);
             this.Controls.Add(this.teamMembersListBox);
-            this.Controls.Add(this.createNewMemberGroupBox);
+            this.Controls.Add(this.addNewMemberGroupBox);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.selectTeamMemberLabel);
@@ -262,8 +262,8 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "CreateTeamForm";
             this.Text = "Create Team";
-            this.createNewMemberGroupBox.ResumeLayout(false);
-            this.createNewMemberGroupBox.PerformLayout();
+            this.addNewMemberGroupBox.ResumeLayout(false);
+            this.addNewMemberGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +277,7 @@
         private System.Windows.Forms.Button addMemberButton;
         private System.Windows.Forms.ComboBox selectTeamMemberDropDown;
         private System.Windows.Forms.Label selectTeamMemberLabel;
-        private System.Windows.Forms.GroupBox createNewMemberGroupBox;
+        private System.Windows.Forms.GroupBox addNewMemberGroupBox;
         private System.Windows.Forms.Button createMemberButton;
         private System.Windows.Forms.TextBox cellphoneValue;
         private System.Windows.Forms.Label cellPhoneLabel;
