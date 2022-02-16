@@ -7,39 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrackerLibrary;
+using TrackerLibrary.Models;
 
 namespace TrackerUI
 {
     public partial class CreateTournamentForm : Form
     {
+        List<TeamModel> availableTeams = GlobalConfig.Connection.GetTeam_All();
+        List<TeamModel> selectedTeams = new List<TeamModel>();
+        List<PrizeModel> selectedPrizes = new List<PrizeModel>();
+
         public CreateTournamentForm()
         {
             InitializeComponent();
+            WireUpLists();
         }
 
-        private void CreateTournamentForm_Load(object sender, EventArgs e)
+       public void WireUpLists()
         {
+            selectTeamDropDown.DataSource = null;
+            selectTeamDropDown.DataSource = availableTeams;
+            selectTeamDropDown.DisplayMember = "TeamName";
 
+            tournamentTeamsListBox.DataSource = null;
+            tournamentTeamsListBox.DataSource = selectedTeams;
+            tournamentTeamsListBox.DisplayMember = "TeamName";
+
+            prizezListBox.DataSource = null;
+            prizezListBox.DataSource = selectedPrizes;
+            prizezListBox.DisplayMember = "PlaceName";
         }
 
-        private void teamAScoreLabel_Click(object sender, EventArgs e)
+        private void addTeamButton_Click(object sender, EventArgs e)
         {
+            //PersonModel p = (PersonModel)selectTeamMemberDropDown.SelectedItem;
 
-        }
+            //if (p != null)
+            //{
+            //    availableTeamMembers.Remove(p);
+            //    selectedTeamMembers.Add(p);
 
-        private void entryFeeValue_TextChanged(object sender, EventArgs e)
-        {
+            //    WireUpList();
+            //}
+            TeamModel t = (TeamModel)selectTeamDropDown.SelectedItem;
+            if (t != null)
+            {
+                availableTeams.Remove(t);
+                selectedTeams.Add(t);
 
-        }
-
-        private void tournamentNameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void prizezListBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+                WireUpLists();
+            }
         }
     }
 }
