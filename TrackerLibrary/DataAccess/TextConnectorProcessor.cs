@@ -103,6 +103,14 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return output;
         }
 
+        public static List<TournamentModel> ConverToTournamentModel(
+            this List<string> line)
+        {
+            // id,TournamentName, EntryFee,(Id|id|id < entered teams), (Id|Id|Id -Prizes), (Rounds - id^id^id|id^id^id|id^id^id)
+            List<TournamentModel> output = new List<TournamentModel>();
+            return output;
+        }
+
         public static void SaveToPrizeFile(this List<PrizeModel> models, 
             string fileName)
         {
