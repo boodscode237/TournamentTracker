@@ -63,6 +63,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="TournamentLogic.cs" />
     <Compile Include="Tournaments.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
