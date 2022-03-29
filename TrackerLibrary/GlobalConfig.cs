@@ -12,7 +12,12 @@ namespace TrackerLibrary
     {
         public static IDataConnection Connection { get; private set; }
 
-
+        public const string PrizesFile = "PrizeModel.csv";
+        public const string PeopleFile = "PersonModel.csv";
+        public const string TeamFile = "TeamModel.csv";
+        public const string TournamentFile = "TournamentModel.csv";
+        public const string MatchupFile = "MatchupModels.csv";
+        public const string MatchupEntryFile = "MatchupEntryModels.csv";
 
         public static void IntitializeConnections(DatabaseType db)
         {
